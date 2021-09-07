@@ -1,0 +1,612 @@
+*, *::before, *::after{
+	box-sizing: border-box;
+}
+
+html{
+	font-size: 16px;
+	line-height: 1.625;
+}
+
+body{
+	margin:0;
+	font-family: 'Source Sans Pro', 'sans serif';
+}
+
+a{
+	color: inherit;
+	text-decoration: none;
+	transition: color 0.3s;
+}
+
+img
+{
+	max-width: 100%;
+	height: auto;
+}
+
+
+.bloc-img img{
+	position: relative;
+	z-index: 2;
+}
+
+p
+{
+	color:#6f6f6f;
+}
+
+/* HEADER */
+
+.header{
+	background: linear-gradient(180deg, rgba(0, 0, 0, 0.922045) 15.5%, rgba(54, 54, 54, 0.5) 39.24%), rgba(28, 28, 28, 0.4)
+	url(img/eggs.jpg) center center /cover no-repeat;
+	color:white;
+}
+
+.topbar{
+	font-size:0.875rem;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 18px 0;
+}
+
+.topbar a:hover{
+	color:#C89446;
+}
+
+.logo{
+	margin-bottom: 10px;
+}
+.menu-item{
+	display: inline-block;
+	margin:0 15px;
+}
+
+.baseline{
+	padding:50px 0 70px 0;
+	text-align: center;
+}
+
+.baseline-welcome{
+	font-family:'Pinyon Script', serif;
+	font-size: 2.2rem;
+	color:#C89446;
+	display: block;
+	line-height: 1;
+
+}
+
+.baseline strong{
+	font-size: 2.5rem;
+	font-weight: bold;
+	line-height: 1;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	padding-bottom: 10px;
+	display: block;
+}
+
+.baseline-slogan{
+	font-size: 1rem;
+	font-weight: 300;
+	display: block;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+@media only screen and (min-width:700px){
+	html{
+		font-size:16px;
+	}
+
+	.topbar{
+		display: flex;
+		max-width:1110px;
+		margin:0 auto;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.logo{
+		padding-left: 15px;
+		margin-bottom: 0px;
+	}
+
+	.menu-button{
+		border:1px solid #C89446;
+		border-radius: 2px;
+		padding: 11px 17px;
+	}
+
+	.baseline{
+		padding: 136px 0 227px;
+	}
+
+	.baseline-slogan{
+		font-size: 1.5rem;
+	}
+
+	.baseline strong{
+		font-size: 4.375rem;
+		letter-spacing: 11px;
+	}
+
+	.baseline-welcome{
+		font-size: 3.75rem;
+		letter-spacing: 4px;
+	}
+}
+
+/* BLOC PRESENTATION */
+.home-section{
+	padding-top: 9px;
+}
+.container-small{
+	margin:0 auto;
+	padding: 0 20px;
+	max-width: 960px;
+}
+
+.container-big
+{
+	margin:0 auto;
+	padding: 0 20px;
+	max-width: 1110px;
+}
+
+.bloc-left, .bloc-right{
+	margin-bottom: 50px;
+}
+
+.bloc-img{
+	max-width: 350px;
+	margin:0 auto;
+}
+.bloc-img img{
+	border:1px solid #C89446;
+}
+
+.bloc-title{
+	font-size: 1.75rem;
+	line-height: 1.1;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin: 0;
+	margin-top: 1rem;
+}
+
+.bloc-title span
+{
+	font-family: 'Pinyon Script', serif;
+	font-size: 2.5rem;
+	display: block;
+	color:#C89446;
+	text-transform: none;
+}
+
+.bloc-title::before{
+	content: "";
+	display: block;
+	width: 24px;
+	height: 2px;
+	background-color:#C89446;
+	margin-bottom: 15px;
+}
+
+.bloc-center .bloc-title::before{
+		display: inline-block;
+	}
+
+.more{
+	color:#C89446;
+}
+
+.more::after
+{
+	content: "  >";
+}
+
+.bloc-center{
+		text-align: center;
+}
+
+.ingredient-menu{
+	font-weight: 600;
+	color:black;
+	text-transform: uppercase;
+	text-align: center;
+	margin-top:64px;
+	margin-bottom: 45px;
+}
+
+.ingredient-menu a{
+	display: inline-block;
+	margin:0 5px;
+}
+
+.ingredient-menu a.active{
+	text-decoration: underline;
+	text-decoration-color: #C89446;
+}
+
+.menu-summary-item
+{
+	padding-left: 120px;
+	position: relative;
+	margin-bottom: 30px;
+}
+
+.menu-summary-title
+{
+	font-size: 1.125rem;
+	color:#383838;
+	font-weight: bold;
+	margin-bottom: 0.75rem;
+}
+
+.menu-summary-img
+{
+	width:100px;
+	position: absolute;
+	left:0;
+	top:0;
+}
+
+.menu-summary p
+{
+	margin-top: 0;
+	font-size: 0.875rem;
+}
+
+.menu-summary-price
+{
+	font-family: 'Pinyon Script',serif;
+	font-size: 2.5rem;
+	color:#C89446;
+	line-height: 1;
+}
+
+.reservation{
+	background: linear-gradient(180deg, rgba(0, 0, 0, 0.922045) 15.5%, rgba(54, 54, 54, 0.5) 39.24%), rgba(28, 28, 28, 0.4)
+	url(img/reservation.jpg) center center /cover no-repeat;
+	color:white;
+	padding: 50px 0;
+}
+
+.reservation .title{
+	color: white;
+}
+
+.reservation p{
+	max-width: 640px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.reservation input, .reservation select{
+	width: 100%;
+	margin-bottom: 15px;
+	border:solid 1px #6f6f6f;
+	background:transparent;
+	text-transform: uppercase;
+	height: 40px;
+	color: white;
+	font-family: 'Source Sans Pro', serif;
+	padding: 0 0.5rem;
+	font-size: 0.675rem;
+	transition: background .3s,border-color .3s;
+	-moz-appearance:none;
+	-webkit-appearance:none;
+	appearance:none;
+}
+
+.reservation select{
+	background:no-repeat right 0.5rem center url(img/select.svg);
+
+}
+
+select option
+{
+	color: black;
+}
+.reservation input:focus, .reservation select:focus{
+	background-color:rgba(255,255,255,.1);
+	border-color: #C89446;
+}
+.reservation .button{
+	width: 100%;
+}
+
+.button{
+	font-weight: 600;
+	font-size: 0.875rem;
+	color:white;
+	background-color: #C89446;
+	border:solid 1px transparent;
+	padding: 11px 1rem;
+	text-transform: uppercase;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.button:hover{
+	background:transparent;
+	border:solid 1px #C89446;
+}
+
+
+.recipes{
+	padding: 50px 0;
+}
+.recipes-list{
+	font-weight: 300;
+	font-size: 1.125rem;
+}
+
+.recipes-list strong{
+	color:#383838;
+	font-weight: bold;
+}
+
+.recipes-list-item{
+	border-bottom: solid 1px #f2f2f2;
+	padding: 20px 0;
+}
+
+.recipes-date strong{
+		font-size:1.75rem;
+}
+
+.recipes-list-item:last-child{
+	border-bottom: 0;
+}
+
+.recipes .more{
+	display: block;
+	text-align:right;
+	margin-top: 60px;
+}
+
+.map{
+	width: 100%;
+	height: 460px;
+	display: block;
+}
+
+.footer{
+	background-color: #383838;
+	font-weight: 300;
+	color:white;
+	padding:40px 0;
+}
+
+.footer-title{
+	color: #C89446;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-bottom: 1.25em;
+}
+@media only screen and (min-width:960px){
+	.bloc-left{
+		display: flex;
+		align-items: center;
+		margin-bottom: 100px;
+	}
+
+	.bloc-img img{
+		border:none;
+	}
+
+	.bloc-left .bloc-img{
+		width:350px;
+		flex:none;
+		margin-left: 30px;
+		position:relative;
+	}
+
+	.bloc-left .bloc-img::before{
+		content: "";
+		width:100%;
+		height: 100%;
+		position: absolute;
+		border:1px solid #C89446;
+		left:-30px;
+		top:-30px;
+		z-index: 1;
+	} 
+
+	.bloc-left .bloc-body{
+		margin-left:94px;
+	}
+
+	.bloc-right{
+		display: flex;
+		align-items: center;
+		margin-bottom: 110px;
+	}
+
+	.bloc-right .bloc-img{
+		width:350px;
+		flex:none;
+		order:2;
+		margin-left: 94px;
+		position:relative;
+	}
+
+	.bloc-right .bloc-img::before{
+		content: "";
+		width:100%;
+		height: 100%;
+		position: absolute;
+		border:1px solid #C89446;
+		right:-30px;
+		top:-30px;
+		z-index: 1;
+	} 
+
+	.bloc-right .bloc-body{
+		margin-left:30px;
+		order:1;
+	}
+
+	.home-section{
+		background: top 95px right 0px url(img/oranges.jpg) no-repeat,
+		top 640px left 0px url(img/spices.jpg) no-repeat;
+	}
+
+	.menu-summary
+	{
+		position: relative;
+		padding: 80px 0;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+
+	.menu-summary-item
+	{
+		padding-left: 192px;
+		width:calc(50% - 35px);
+		margin-bottom: 110px;
+	}
+
+	.menu-summary-img
+	{
+		width: 160px;
+	}
+
+	.menu-summary-title
+	{
+		margin-top: 0;
+		background-color: white;
+		margin-bottom: 0;
+		padding-bottom: 12px;
+	}
+
+	.menu-summary p
+	{
+		background-color: white;
+		margin-bottom: 0;
+		padding-bottom: 14px;
+	}
+
+	.menu-summary-item:nth-child(even)
+	{
+		padding-left: 0;
+		padding-right: 192px;
+		text-align: right;
+	}
+
+	.menu-summary-item:nth-child(even) .menu-summary-img
+	{
+		left:auto;
+		right:0;
+	}
+
+	.menu-summary:before
+	{
+		content: '';
+		display: block;
+		position: absolute;
+		width: 400px;
+		height: 400px;
+		border:solid 1px #C89446;
+		top:100px;
+		left:50%;
+		transform: translateX(-50%) rotate(45deg);
+	}
+
+	.bloc-chief
+	{
+		display: flex;
+		align-items: center;
+		margin-bottom: 0px;
+	}
+
+	.bloc-chief .bloc-img:before{
+		display: none;
+	}	
+
+	.bloc-chief .bloc-img{
+		flex:none;
+		width: 404px;
+		order: 2;
+	}
+
+	.reservation{
+		padding: 100px 0;
+	}
+
+	.reservation-form-row
+	{
+		margin: 64px 0;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.reservation-form-row input,.reservation-form-row select{
+		width: calc(33.33% - 20px);
+		margin-bottom: 0;
+	}
+
+	.reservation .button{
+		width: calc(33.33% - 20px);
+	}
+
+	.recipes{
+		padding: 60px 0;
+	}
+
+	.recipes .bloc-title{
+		text-align: right;
+	}
+
+	.recipes .container-big >p{
+		text-align: right;
+		max-width:716px;
+		margin-left: auto;
+	}
+
+	.recipes-list-item{
+		display: flex;
+	}
+
+	.recipes-date{
+		width:95px;
+		flex:none;
+	}
+
+	.recipes-date strong{
+		display: block;
+	}
+
+	.recipes-list-item p{
+		margin-top: 0;
+	}
+
+	.recipes-list{
+		margin-top:60px;
+		margin-bottom: 60px;
+	}
+
+	.footer-columns{
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.footer-column{
+		width: 300px;
+		flex:none;
+		margin-right: 50px;
+	}
+
+	.footer-column:first-child{
+		width: 450px;
+	}
+
+	.footer-column:last-child{
+		margin-right: 0px;
+		flex:none;
+	}
+}
